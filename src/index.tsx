@@ -23,7 +23,8 @@ root.render(
         dappMetadata: {
           name: "Demo React App",
           url: window.location.host,
-        }
+        },
+        useDeeplink: true,
     }}>
       <App />
     </MetaMaskProvider>
