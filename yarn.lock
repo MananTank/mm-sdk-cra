@@ -2542,23 +2542,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/sdk-communication-layer@npm:0.10.0":
-  version: 0.10.0
-  resolution: "@metamask/sdk-communication-layer@npm:0.10.0"
+"@metamask/sdk-communication-layer@npm:0.12.3, @metamask/sdk-communication-layer@npm:^0.12.3":
+  version: 0.12.3
+  resolution: "@metamask/sdk-communication-layer@npm:0.12.3"
   dependencies:
+    bufferutil: ^4.0.8
     cross-fetch: ^3.1.5
     date-fns: ^2.29.3
     eciesjs: ^0.3.16
     eventemitter2: ^6.4.5
     socket.io-client: ^4.5.1
+    utf-8-validate: ^6.0.3
     uuid: ^8.3.2
-  checksum: 0bf3702e137f8fdbc3f4ac7242f83dc741083cda7ee0102f6d9c2044405e925e14e411014350a2c8068f4e110c1172613161433b3d61d968ea3b615f9cc0929b
+  checksum: 4bdeca91c96ef718d90df4a55f83f1a5632170bb9f81ce8631e182fba8c8fd79a98eb76ac30b9a955620bb762fd3eb288c23bd12ca19632b46ec2c45d287e16d
   languageName: node
   linkType: hard
 
-"@metamask/sdk-install-modal-web@npm:0.10.0":
-  version: 0.10.0
-  resolution: "@metamask/sdk-install-modal-web@npm:0.10.0"
+"@metamask/sdk-install-modal-web@npm:0.12.2":
+  version: 0.12.2
+  resolution: "@metamask/sdk-install-modal-web@npm:0.12.2"
   dependencies:
     "@emotion/react": ^11.10.6
     "@emotion/styled": ^11.10.6
@@ -2567,31 +2569,33 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-i18next: ^13.2.2
-  checksum: dae908e28915ed34cb7ae924503fa8a0f4543f871638bdd0651f731282ee11a50be6e82ac37365d3e8238a1e7222820e3627a58f978b3f529d9da2b122b77de9
+  checksum: 21b6af3fe1e40e58ca9896ff96dded6e5b65b35e605b2d73ac7455d06fcbe2fa5aa36ff634baa3d5e30771a49910884a5ec5a38d327a273b111115be3accba5b
   languageName: node
   linkType: hard
 
-"@metamask/sdk-react@npm:^0.10.0":
-  version: 0.10.0
-  resolution: "@metamask/sdk-react@npm:0.10.0"
+"@metamask/sdk-react@npm:^0.12.2":
+  version: 0.12.3
+  resolution: "@metamask/sdk-react@npm:0.12.3"
   dependencies:
-    "@metamask/sdk": ^0.10.0
+    "@metamask/sdk": ^0.12.3
+    "@metamask/sdk-communication-layer": ^0.12.3
+    eth-rpc-errors: ^4.0.3
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: ee3a998ff4355740c0395c8a49d305aafb1133a593678b27e27071911e2b3aae44ffdb00fd765703dcb0b08efdca2f718092e6608b26bc5f34014972282b2967
+  checksum: dd17eef8f340c61f0a71a70fee8aa2f52138a3b32d9480415c5a5d76994b985e7dff1aaf8ea4a1963c0617a3a888190b349b9bb36a0c394fcca46ef6ff544526
   languageName: node
   linkType: hard
 
-"@metamask/sdk@npm:^0.10.0":
-  version: 0.10.0
-  resolution: "@metamask/sdk@npm:0.10.0"
+"@metamask/sdk@npm:^0.12.3":
+  version: 0.12.3
+  resolution: "@metamask/sdk@npm:0.12.3"
   dependencies:
     "@metamask/onboarding": ^1.0.1
     "@metamask/post-message-stream": ^6.1.0
     "@metamask/providers": ^10.2.1
-    "@metamask/sdk-communication-layer": 0.10.0
-    "@metamask/sdk-install-modal-web": 0.10.0
+    "@metamask/sdk-communication-layer": 0.12.3
+    "@metamask/sdk-install-modal-web": 0.12.2
     "@react-native-async-storage/async-storage": ^1.17.11
     "@types/dom-screen-wake-lock": ^1.0.0
     bowser: ^2.9.0
@@ -2604,10 +2608,11 @@ __metadata:
     i18next-browser-languagedetector: ^7.1.0
     obj-multiplex: ^1.0.0
     pump: ^3.0.0
-    qrcode-terminal: ^0.12.0
+    qrcode-terminal-nooctal: ^0.12.1
     react-i18next: ^13.2.2
     react-native-webview: ^11.26.0
     readable-stream: ^2.3.7
+    rollup-plugin-visualizer: ^5.9.2
     socket.io-client: ^4.5.1
     util: ^0.12.4
     uuid: ^8.3.2
@@ -2619,7 +2624,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: a1c9f0e3bce0b682cdd1dd51bedec7229bf800655fea07e03e2686ea1a5441bd355c9e4e9aa63150fffa623ea467c463f9cf991f1a21855c9b85a448e2e3930d
+  checksum: a0b8f066ee35088025bce9e84632a6e2224d1baf44a8420e8dc38a6aec6e262b4c9f00dbeea38bc74b8043af53b5125296b7822dd81e804888b271ea846f8bc3
   languageName: node
   linkType: hard
 
@@ -3497,7 +3502,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.2.14":
+"@types/react@npm:*":
   version: 18.2.21
   resolution: "@types/react@npm:18.2.21"
   dependencies:
@@ -3505,6 +3510,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: ffed203bfe7aad772b8286f7953305c9181ac3a8f27d3f5400fbbc2a8e27ca8e5bbff818ee014f39ca0d19d2b3bb154e5bdbec7e232c6f80b59069375aa78349
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.2.21":
+  version: 18.2.38
+  resolution: "@types/react@npm:18.2.38"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 71f8c167173d32252be8b2d3c1c76b3570b94d2fbbd139da86d146be453626f5777e12c2781559119637520dbef9f91cffe968f67b5901618f29226d49fad326
   languageName: node
   linkType: hard
 
@@ -4651,6 +4667,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"base64-js@npm:^1.3.1":
+  version: 1.5.1
+  resolution: "base64-js@npm:1.5.1"
+  checksum: 669632eb3745404c2f822a18fc3a0122d2f9a7a13f7fb8b5823ee19d1d2ff9ee5b52c53367176ea4ad093c332fd5ab4bd0ebae5a8e27917a4105a4cfc86b1005
+  languageName: node
+  linkType: hard
+
 "batch@npm:0.6.1":
   version: 0.6.1
   resolution: "batch@npm:0.6.1"
@@ -4825,6 +4848,26 @@ __metadata:
   version: 1.1.2
   resolution: "buffer-from@npm:1.1.2"
   checksum: 0448524a562b37d4d7ed9efd91685a5b77a50672c556ea254ac9a6d30e3403a517d8981f10e565db24e8339413b43c97ca2951f10e399c6125a0d8911f5679bb
+  languageName: node
+  linkType: hard
+
+"buffer@npm:^6.0.3":
+  version: 6.0.3
+  resolution: "buffer@npm:6.0.3"
+  dependencies:
+    base64-js: ^1.3.1
+    ieee754: ^1.2.1
+  checksum: 5ad23293d9a731e4318e420025800b42bf0d264004c0286c8cc010af7a270c7a0f6522e84f54b9ad65cbd6db20b8badbfd8d2ebf4f80fa03dab093b89e68c3f9
+  languageName: node
+  linkType: hard
+
+"bufferutil@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "bufferutil@npm:4.0.8"
+  dependencies:
+    node-gyp: latest
+    node-gyp-build: ^4.3.0
+  checksum: 7e9a46f1867dca72fda350966eb468eca77f4d623407b0650913fadf73d5750d883147d6e5e21c56f9d3b0bdc35d5474e80a600b9f31ec781315b4d2469ef087
   languageName: node
   linkType: hard
 
@@ -5066,6 +5109,17 @@ __metadata:
     strip-ansi: ^6.0.0
     wrap-ansi: ^7.0.0
   checksum: ce2e8f578a4813806788ac399b9e866297740eecd4ad1823c27fd344d78b22c5f8597d548adbcc46f0573e43e21e751f39446c5a5e804a12aace402b7a315d7f
+  languageName: node
+  linkType: hard
+
+"cliui@npm:^8.0.1":
+  version: 8.0.1
+  resolution: "cliui@npm:8.0.1"
+  dependencies:
+    string-width: ^4.2.0
+    strip-ansi: ^6.0.1
+    wrap-ansi: ^7.0.0
+  checksum: 79648b3b0045f2e285b76fb2e24e207c6db44323581e421c3acbd0e86454cba1b37aea976ab50195a49e7384b871e6dfb2247ad7dec53c02454ac6497394cb56
   languageName: node
   linkType: hard
 
@@ -7985,6 +8039,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ieee754@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "ieee754@npm:1.2.1"
+  checksum: 5144c0c9815e54ada181d80a0b810221a253562422e7c6c3a60b1901154184f49326ec239d618c416c1c5945a2e197107aee8d986a3dd836b53dffefd99b5e7e
+  languageName: node
+  linkType: hard
+
 "ignore@npm:^5.2.0":
   version: 5.2.4
   resolution: "ignore@npm:5.2.4"
@@ -10017,13 +10078,14 @@ __metadata:
   resolution: "mm-sdk-cra@workspace:."
   dependencies:
     "@lavamoat/allow-scripts": ^2.3.1
-    "@metamask/sdk-react": ^0.10.0
+    "@metamask/sdk-react": ^0.12.2
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
     "@testing-library/user-event": ^13.5.0
     "@types/node": ^20.4.1
-    "@types/react": ^18.2.14
+    "@types/react": ^18.2.21
     "@types/react-dom": ^18.2.6
+    buffer: ^6.0.3
     react: ^18.2.0
     react-dom: ^18.2.0
     react-scripts: 5.0.1
@@ -10161,6 +10223,17 @@ __metadata:
     node-gyp-build-optional: optional.js
     node-gyp-build-test: build-test.js
   checksum: c3676d337b36803bc7792e35bf7fdcda7cdcb7e289b8f9855a5535702a82498eb976842fefcf487258c58005ca32ce3d537fbed91280b04409161dcd7232a882
+  languageName: node
+  linkType: hard
+
+"node-gyp-build@npm:^4.3.0":
+  version: 4.7.0
+  resolution: "node-gyp-build@npm:4.7.0"
+  bin:
+    node-gyp-build: bin.js
+    node-gyp-build-optional: optional.js
+    node-gyp-build-test: build-test.js
+  checksum: 5b0417487c8b30c36e23974f968fe4c166dc9ee0707ec17a74ff6c8265af9ec9e2bab9ca36c5113b828fdb384f405fcd546231c215c721559a776a07b5c0b98b
   languageName: node
   linkType: hard
 
@@ -11734,12 +11807,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qrcode-terminal@npm:^0.12.0":
-  version: 0.12.0
-  resolution: "qrcode-terminal@npm:0.12.0"
+"qrcode-terminal-nooctal@npm:^0.12.1":
+  version: 0.12.1
+  resolution: "qrcode-terminal-nooctal@npm:0.12.1"
   bin:
-    qrcode-terminal: ./bin/qrcode-terminal.js
-  checksum: 51638d11d080e06ef79ef2d5cfe911202159e48d2873d6a80a3c5489b4b767acf4754811ceba4e113db8f41f61a06c163bcb17e6e18e6b34e04a7a5155dac974
+    qrcode-terminal: bin/qrcode-terminal.js
+  checksum: 1071c4be2bfa07b3956ad0a63c87452ced0b5180a9dc19f224fc3dd69bb24ad687a7af365acdde0f876ddf89dc1a4beadba88d89c7c5c5cbf2ef3efaef64736e
   languageName: node
   linkType: hard
 
@@ -12384,6 +12457,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup-plugin-visualizer@npm:^5.9.2":
+  version: 5.9.2
+  resolution: "rollup-plugin-visualizer@npm:5.9.2"
+  dependencies:
+    open: ^8.4.0
+    picomatch: ^2.3.1
+    source-map: ^0.7.4
+    yargs: ^17.5.1
+  peerDependencies:
+    rollup: 2.x || 3.x
+  peerDependenciesMeta:
+    rollup:
+      optional: true
+  bin:
+    rollup-plugin-visualizer: dist/bin/cli.js
+  checksum: ab2adf322e3b20bffc94a8dc804f46be8840a9fcbab4f872dcc2dec205cdd7752e4d2d90cfcf00783bfb5209c5a8bb4e591984e8b61bca41fd048fb7deb0ed4e
+  languageName: node
+  linkType: hard
+
 "rollup@npm:^2.43.1":
   version: 2.79.1
   resolution: "rollup@npm:2.79.1"
@@ -12869,7 +12961,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map@npm:^0.7.3":
+"source-map@npm:^0.7.3, source-map@npm:^0.7.4":
   version: 0.7.4
   resolution: "source-map@npm:0.7.4"
   checksum: 01cc5a74b1f0e1d626a58d36ad6898ea820567e87f18dfc9d24a9843a351aaa2ec09b87422589906d6ff1deed29693e176194dc88bcae7c9a852dc74b311dbf5
@@ -13885,6 +13977,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"utf-8-validate@npm:^6.0.3":
+  version: 6.0.3
+  resolution: "utf-8-validate@npm:6.0.3"
+  dependencies:
+    node-gyp: latest
+    node-gyp-build: ^4.3.0
+  checksum: 5e21383c81ff7469c1912119ca69d07202d944c73ddd8a54b84dddcc546b939054e5101c78c294e494d206fe93bd43428adc635a0660816b3ec9c8ec89286ac4
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.1, util-deprecate@npm:^1.0.2, util-deprecate@npm:~1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -14744,6 +14846,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"yargs-parser@npm:^21.1.1":
+  version: 21.1.1
+  resolution: "yargs-parser@npm:21.1.1"
+  checksum: ed2d96a616a9e3e1cc7d204c62ecc61f7aaab633dcbfab2c6df50f7f87b393993fe6640d017759fe112d0cb1e0119f2b4150a87305cc873fd90831c6a58ccf1c
+  languageName: node
+  linkType: hard
+
 "yargs@npm:^16.2.0":
   version: 16.2.0
   resolution: "yargs@npm:16.2.0"
@@ -14756,6 +14865,21 @@ __metadata:
     y18n: ^5.0.5
     yargs-parser: ^20.2.2
   checksum: b14afbb51e3251a204d81937c86a7e9d4bdbf9a2bcee38226c900d00f522969ab675703bee2a6f99f8e20103f608382936034e64d921b74df82b63c07c5e8f59
+  languageName: node
+  linkType: hard
+
+"yargs@npm:^17.5.1":
+  version: 17.7.2
+  resolution: "yargs@npm:17.7.2"
+  dependencies:
+    cliui: ^8.0.1
+    escalade: ^3.1.1
+    get-caller-file: ^2.0.5
+    require-directory: ^2.1.1
+    string-width: ^4.2.3
+    y18n: ^5.0.5
+    yargs-parser: ^21.1.1
+  checksum: 73b572e863aa4a8cbef323dd911d79d193b772defd5a51aab0aca2d446655216f5002c42c5306033968193bdbf892a7a4c110b0d77954a7fdf563e653967b56a
   languageName: node
   linkType: hard
 
